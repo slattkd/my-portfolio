@@ -1,0 +1,137 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --pill-accent: var(--bright-blue);
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+</style>
+
+<main>
+  <div class="bg-gray-900 shadow-sm">
+    <nav class="container mx-auto flex items-center justify-between flex-wrap px-2 lg:px-0 py-3">
+      <div class="flex items-center flex-shrink-0 mr-6">
+        <a href="/" class="flex items-center">
+          <img [src]="imgUrl" class="rounded-full -m-3 ms-0 hidden lg:block" alt="" height="85px" width="85px">
+          <span class="font-bold text-teal-700 text-4xl tracking-tigh lg:-ml-2 mr-4">{{ title }}</span>
+        </a>
+        <a [href]="linkedInURL" target="_blank" aria-label="LinkedIn" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="h-6 w-6 -mb-1 clickable" viewBox="0 0 24 24">
+            <path class="fill-teal-700" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="w-full block flex-grow lg:flex lg:justify-center lg:items-center lg:w-auto">
+        <div class="text-sm flex lg:flex-grow lg:justify-end align-middle items-center">
+          <div class="">
+            @for (item of links; track item.title) {
+              <a
+                class="block mt-4 lg:inline-block text-xl lg:mt-0 text-teal-700 clickable ml-4 lg:ml-6"
+                [href]="item.link"
+                routerLinkActive="border-b"
+                rel="noopener"
+              >
+                <span>{{ item.title }}</span>
+              </a>
+            }
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+</main>
+<router-outlet></router-outlet>
+
+
+<footer class="shadow bg-gray-900">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img [src]="imgUrl" class="h-12 rounded-full" alt="Dane Portrait" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Dane Slatten</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 text-gray-400">
+            @for (item of links; track item.title) {
+              <li>
+                <a
+                  class="block mt-4 lg:inline-block text-xl lg:mt-0 text-teal-700 clickable ml-4 lg:ml-6"
+                  [href]="item.link"
+                  routerLinkActive="border-b"
+                  rel="noopener"
+                >
+                  <span>{{ item.title }}</span>
+                </a>
+              </li>
+            }
+          </ul>
+      </div>
+      <hr class="my- sm:mx-auto border-gray-700 lg:my-8" />
+      <span class="block text-sm sm:text-center text-gray-400">© {{currentYear}} Dane Slatten™ All Rights Reserved.</span>
+  </div>
+</footer>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

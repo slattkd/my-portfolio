@@ -1,0 +1,39 @@
+.splide__arrow.splide__arrow--prev {
+  transform: translate(-55px, 120px);
+  padding-left: 6px;
+  padding-right: 10px;
+}
+
+.splide__arrow.splide__arrow--next {
+  transform: translate(55px, 120px);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+button.splide__arrow {
+  background: #16161680;
+  border-radius:200px;
+  z-index: 11;
+  width: 50px;
+  height: 50px;
+}
+
+/* @media screen and (min-width: 1400px) {
+  .splide__arrow.splide__arrow--prev {
+    transform: translate(-55px, 120px);
+  }
+  
+  .splide__arrow.splide__arrow--next {
+    transform: translate(55px, 120px);
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .splide__arrow.splide__arrow--prev {
+    transform: translate(-55px, 120px);
+  }
+  
+  .splide__arrow.splide__arrow--next {
+    transform: translate(55px, 120px);
+  }
+} */
