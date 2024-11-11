@@ -1,0 +1,26 @@
+# compiled output
+/dist
+/out-tsc
+/tmp
+
+# dependencies
+/node_modules
+
+# IDE and editor configurations
+.idea/
+.vscode/
+*.iml
+
+# local environment files
+.env
+.DS_Store
+
+# Angular specific files
+/coverage
+/e2e/node_modules
+.angular/cache
+
+# Package manager lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
