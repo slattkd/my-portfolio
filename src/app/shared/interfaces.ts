@@ -5,3 +5,9 @@ export interface Gallery {
   thumbnail: string;
   category: 'process' | 'enterprise' | 'web' | 'brand' | 'other';
 }
+
+export interface Links {
+  title: string;
+  url: string;
+  target: string;
+}
