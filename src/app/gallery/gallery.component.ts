@@ -10,7 +10,7 @@ import { ModalComponent } from '../modal/modal.component';
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [FilterObjectsPipe, UpperCasePipe, ModalComponent, NgIf, NgFor],
+  imports: [FilterObjectsPipe, UpperCasePipe, ModalComponent, NgFor],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.css'
 })
@@ -41,7 +41,7 @@ export class GalleryComponent implements OnInit {
     let splides = document.querySelectorAll('.splide');
     setTimeout(() => {
       this.renderSlides(this.uniqueCategories);
-    }, 50);
+    }, 100);
     
   }
 

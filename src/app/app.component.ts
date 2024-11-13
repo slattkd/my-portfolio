@@ -1,24 +1,22 @@
 import { Component, viewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NavComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Dane Slatten';
-  links = [
-    { title: 'About Me', link: '/about' },
-    { title: 'Gallery', link: '/gallery' },
-    { title: 'Random', link: '/random' },
-    { title: 'Contact', link: '/contact' },
+  navLinks = [
+    { title: 'About Me', url: '/about', target: '' },
+    { title: 'Gallery', url: '/gallery', target: '' },
+    { title: 'Random', url: '/random', target: '' },
+    { title: 'Contact', url: '/contact', target: '' },
   ];
-  imgUrl = './assets/images/me.png';
-  linkedInURL = 'https://www.linkedin.com/in/dane-slatten/';
   categories = ['Enterprise Apps', 'Websites', 'Print', 'Illustrations'];
-  currentYear = new Date().getFullYear();
 
 }
