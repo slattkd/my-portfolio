@@ -14,7 +14,6 @@ export class AppComponent {
   navLinks = [
     { title: 'About Me', url: '/about', target: '' },
     { title: 'Gallery', url: '/gallery', target: '' },
-    { title: 'Random', url: '/random', target: '' },
     { title: 'Contact', url: '/contact', target: '' },
   ];
   categories = ['Enterprise Apps', 'Websites', 'Print', 'Illustrations'];

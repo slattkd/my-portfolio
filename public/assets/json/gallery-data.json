@@ -56,10 +56,31 @@
     "category": "web"
   },
   {
+    "title": "Admin UI - Extranet",
+    "description": "Admin view options for Dillad's Extranet",
+    "src": "assets/images/dill-ebiz-admin.png",
+    "thumbnail": "assets/images/dill-ebiz-admin-thumb.png",
+    "category": "enterprise"
+  },
+  {
+    "title": "IAMS - Dillard's Security Mngmt.",
+    "description": "Security level managment solution for extranet applicaitons",
+    "src": "assets/images/dill-iams.png",
+    "thumbnail": "assets/images/dill-iams-thumb.png",
+    "category": "enterprise"
+  },
+  {
+    "title": "UR - Admin CSV tool",
+    "description": "Inventory management system admin tool for CSV uploads",
+    "src": "assets/images/dill-ur-csv.png",
+    "thumbnail": "assets/images/dill-ur-csv-thumb.png",
+    "category": "enterprise"
+  },
+  {
     "title": "Mockup - DoD BAE Mockup",
     "description": "Mockup for data source visualization and performance",
-    "src": "assets/images/mock-dod-bae-data-map.png",
-    "thumbnail": "assets/images/mock-dod-bae-data-map-thumb.png",
+    "src": "assets/images/mock-dod-bae-data-sync.png",
+    "thumbnail": "assets/images/mock-dod-bae-data-sync-thumb.png",
     "category": "enterprise"
   },
   {
@@ -81,13 +102,6 @@
     "description": "Web Element solution for application notifications",
     "src": "assets/images/notifications-component.jpg",
     "thumbnail": "assets/images/notifications-component.jpg",
-    "category": "enterprise"
-  },
-  {
-    "title": "Process Flow - web funnel",
-    "description": "Process flow for web funnel product up and down sells",
-    "src": "assets/images/process-web-funnel-purchase.png",
-    "thumbnail": "assets/images/process-web-funnel-purchase-thumb.png",
     "category": "process"
   },
   {
@@ -98,10 +112,24 @@
     "category": "process"
   },
   {
+    "title": "UI - Extranet",
+    "description": "Prototype research for UI user options on extranet web app",
+    "src": "assets/images/pro-dill-ebiz.jpg",
+    "thumbnail": "assets/images/pro-dill-ebiz-thumb.jpg",
+    "category": "process"
+  },
+  {
     "title": "Process Flow - video app",
     "description": "Process flow for video content managment",
     "src": "assets/images/process-video-app.png",
     "thumbnail": "assets/images/process-video-app-thumb.png",
+    "category": "process"
+  },
+  {
+    "title": "Process Flow - web funnel",
+    "description": "Process flow for web funnel product up and down sells",
+    "src": "assets/images/process-web-funnel-purchase.png",
+    "thumbnail": "assets/images/process-web-funnel-purchase-thumb.png",
     "category": "process"
   },
   {

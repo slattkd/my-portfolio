@@ -25,7 +25,7 @@
     
     <div class="splide__track flex w-full max-w-full border-r py-2" style="overflow: hidden;">
       <ul class="splide__list flex w-full items-start">
-          <li *ngFor="let item of slides | filterObjects: 'category' : caty" class="splide__slide slide-pic flex flex-col w-full border bg-gray-100 mx-4 shadow-sm rounded-t-md">
+          <li *ngFor="let item of slides | filterObjects: 'category' : caty" class="splide__slide slide-pic flex flex-col w-full border bg-gray-100 mx-4 shadow-sm rounded-t-md max-w-[350px]">
             <!-- min-w-[300px] min-h-[250px] -->
             <div class="flex flex-col min-h-[250px] max-w-[350px] relative hover:shadow-md cursor-pointer" (click)="openModal(item)">
               <img [src]="item.thumbnail" [alt]="item.title" class="w-full h-full absolute left-0 top-0 right-0 bottom-0 object-cover object-left-top rounded-t-md">
