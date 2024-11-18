@@ -30,3 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Compiling CSS
 
 npx tailwindcss -o build.css --minify
+
+## Hosting Firebase Deploy
+
+ng deploy

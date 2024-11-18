@@ -41,7 +41,7 @@ export class GalleryComponent implements OnInit {
     let splides = document.querySelectorAll('.splide');
     setTimeout(() => {
       this.renderSlides(this.uniqueCategories);
-    }, 100);
+    }, 200);
     
   }
 
