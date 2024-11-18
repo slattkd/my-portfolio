@@ -1,182 +1,182 @@
 [
   {
-    "title": "Website - Dillard's Men/Home",
-    "description": "Ecommerce layout for category landing pages",
+    "title": "Dillard's Men/Home Landing",
+    "description": "Designed visually compelling layouts and integrated marketing elements for e-commerce category landing pages, enhancing user navigation, product discoverability, and conversion rates through cohesive branding and UX principles.",
     "src": "assets/images/dill-men-home.png",
     "thumbnail": "assets/images/dill-men-home-thumb.png",
     "category": "web"
   },
   {
-    "title": "Website - Dillard's Careers",
-    "description": "Job selection UI",
+    "title": "Dillard's Careers",
+    "description": "Developed an intuitive and user-friendly job selection interface, focusing on clear options, efficient navigation, and seamless interaction to streamline the application process.",
     "src": "assets/images/web-dill-careers.jpg",
     "thumbnail": "assets/images/web-dill-careers-thumb.jpg",
     "category": "web"
   },
   {
-    "title": "Website - Dillard's Careers",
-    "description": "Employee information form",
+    "title": "Dillard's Careers",
+    "description": "Created a dynamic employee information form with user-friendly input fields and validations, ensuring accessibility, accuracy, and compliance with data collection standards.",
     "src": "assets/images/web-dill-careers-2.png",
     "thumbnail": "assets/images/web-dill-careers-2-thumb.png",
     "category": "web"
   },
   {
-    "title": "Website - Dillard's Recruit",
-    "description": "Marketing and recruitment website for IT department",
+    "title": "Dillard's Recruit",
+    "description": "Designed and built a marketing and recruitment platform tailored for an IT department, combining engaging visuals with interactive features to attract talent and showcase departmental achievements.",
     "src": "assets/images/web-dill-recruit.png",
     "thumbnail": "assets/images/web-dill-recruit-thumb.png",
     "category": "web"
   },
   {
-    "title": "Website - Wesleyan WV",
-    "description": "Custom design solution for university website",
+    "title": "Wesleyan WV",
+    "description": "Delivered a tailored design solution that aligned with the university's branding, enhancing functionality and user engagement for students and faculty.",
     "src": "assets/images/web-wesleyan.png",
     "thumbnail": "assets/images/web-wesleyan-thumb.png",
     "category": "web"
   },
   {
-    "title": "Website - Lexicon Steel",
-    "description": "Custom design solution for steel construction website",
+    "title": "Lexicon Steel",
+    "description": "Created a professional and visually appealing design reflecting the steel construction industry's robust and precise nature, optimized for lead generation.",
     "src": "assets/images/web-lexicon-steel.png",
     "thumbnail": "assets/images/web-lexicon-steel-thumb.png",
     "category": "web"
   },
   {
-    "title": "Website - Urban Aroma",
-    "description": "Custom design solution for cannabis website",
+    "title": "Urban Aroma",
+    "description": "Crafted a clean and modern design for a cannabis website that adhered to industry regulations while appealing to a health-conscious audience.",
     "src": "assets/images/web-urban-aroma.png",
     "thumbnail": "assets/images/web-urban-aroma-thumb.png",
     "category": "web"
   },
   {
-    "title": "Website - Total Brain Boost",
-    "description": "Marketing landing portal for health supplament website",
+    "title": "Total Brain Boost",
+    "description": "Developed a marketing landing portal for a health supplement website, incorporating persuasive design elements and data-driven CTAs to maximize conversions.",
     "src": "assets/images/web-brain-boost.png",
     "thumbnail": "assets/images/web-brain-boost-thumb.png",
     "category": "web"
   },
   {
     "title": "Admin UI - Extranet",
-    "description": "Admin view options for Dillad's Extranet",
+    "description": "Designed versatile admin views for Dillard’s Extranet, enhancing usability and efficient management of extranet features.",
     "src": "assets/images/dill-ebiz-admin.png",
     "thumbnail": "assets/images/dill-ebiz-admin-thumb.png",
     "category": "enterprise"
   },
   {
     "title": "IAMS - Dillard's Security Mngmt.",
-    "description": "Security level managment solution for extranet applicaitons",
+    "description": "Built a robust solution to handle multi-tier security levels for extranet applications, ensuring data integrity and access control.",
     "src": "assets/images/dill-iams.png",
     "thumbnail": "assets/images/dill-iams-thumb.png",
     "category": "enterprise"
   },
   {
     "title": "UR - Admin CSV tool",
-    "description": "Inventory management system admin tool for CSV uploads",
+    "description": "Developed an admin tool for managing CSV uploads within an inventory management system, enabling bulk data handling with streamlined workflows.",
     "src": "assets/images/dill-ur-csv.png",
     "thumbnail": "assets/images/dill-ur-csv-thumb.png",
     "category": "enterprise"
   },
   {
-    "title": "Mockup - DoD BAE Mockup",
-    "description": "Mockup for data source visualization and performance",
+    "title": "DoD BAE",
+    "description": "Designed a prototype for visualizing data sources, focusing on clarity and actionable insights for performance tracking.",
     "src": "assets/images/mock-dod-bae-data-sync.png",
     "thumbnail": "assets/images/mock-dod-bae-data-sync-thumb.png",
     "category": "enterprise"
   },
   {
-    "title": "Mockup - DoD BAE 2",
-    "description": "Mockup for data source maintenance admin view",
+    "title": "DoD BAE 2",
+    "description": "Created a user-centric mockup for administrators to maintain data sources effectively, emphasizing usability and efficiency.",
     "src": "assets/images/mock-dod-bae-data-map.png",
     "thumbnail": "assets/images/mock-dod-bae-data-map-thumb.png",
     "category": "enterprise"
   },
   {
-    "title": "Component - Dillard's Info Hub",
-    "description": "Web Element solution for multiple user needs across applications",
+    "title": "Dillard's Info Hub",
+    "description": "Engineered adaptable web elements to cater to diverse user needs across multiple applications, ensuring consistency and reusability.",
     "src": "assets/images/web-dill-info-hub.png",
     "thumbnail": "assets/images/web-dill-info-hub-thumb.png",
     "category": "enterprise"
   },
   {
-    "title": "Component - Dillard's Notifications",
-    "description": "Web Element solution for application notifications",
+    "title": "Dillard's Notifications",
+    "description": "Designed a notification system that integrates seamlessly into various applications, offering real-time updates with a user-first approach.",
     "src": "assets/images/notifications-component.jpg",
     "thumbnail": "assets/images/notifications-component.jpg",
     "category": "process"
   },
   {
-    "title": "Prototype - AR Children's Hospital",
-    "description": "Redesign for a landing page for Arkansas Children's Hospital",
+    "title": "AR Children's Hospital",
+    "description": "Redesigned a landing page for Arkansas Children’s Hospital, blending accessibility standards with engaging design to support the hospital’s mission and audience.",
     "src": "assets/images/AR-childrens-landing.png",
     "thumbnail": "assets/images/AR-childrens-landing-thumb.png",
     "category": "process"
   },
   {
-    "title": "UI - Extranet",
-    "description": "Prototype research for UI user options on extranet web app",
+    "title": "Dillard's Extranet Portal",
+    "description": "Conducted user-centered prototype research to explore and refine UI options for an extranet web application, ensuring practical and innovative solutions.",
     "src": "assets/images/pro-dill-ebiz.jpg",
     "thumbnail": "assets/images/pro-dill-ebiz-thumb.jpg",
     "category": "process"
   },
   {
-    "title": "Process Flow - video app",
-    "description": "Process flow for video content managment",
+    "title": "Video App Process",
+    "description": "Designed process flows for efficient video content management, simplifying uploads, categorization, and playback.",
     "src": "assets/images/process-video-app.png",
     "thumbnail": "assets/images/process-video-app-thumb.png",
     "category": "process"
   },
   {
-    "title": "Process Flow - web funnel",
-    "description": "Process flow for web funnel product up and down sells",
+    "title": "Web Funnel Process",
+    "description": "Mapped product funnel flows to optimize upselling and downselling opportunities, enhancing revenue potential.",
     "src": "assets/images/process-web-funnel-purchase.png",
     "thumbnail": "assets/images/process-web-funnel-purchase-thumb.png",
     "category": "process"
   },
   {
-    "title": "Style Guide - UR app",
-    "description": "General style guide for user replenishment application",
+    "title": "UR App Style Guide",
+    "description": "Created a comprehensive style guide for a user replenishment application to ensure design consistency and intuitive interactions.",
     "src": "assets/images/style-guide-UR.png",
     "thumbnail": "assets/images/style-guide-UR-thumb.png",
     "category": "process"
   },
   {
-    "title": "Wireframe - CMS block editor",
-    "description": "First concept for in-house block level CMS UI",
+    "title": "CMS Block Editor",
+    "description": "Developed a first-concept prototype for an in-house CMS, focusing on modularity and ease of use for non-technical users.",
     "src": "assets/images/wireframe-cms-block.png",
     "thumbnail": "assets/images/wireframe-cms-block-thumb.png",
     "category": "process"
   },
   {
-    "title": "Displays - Dill IT Recruitment",
-    "description": "Trade show displays for college job recruitment",
+    "title": "Dillard's IT Recruitment",
+    "description": "Designed visually impactful trade show displays to attract college talent, reflecting the organization’s core values.",
     "src": "assets/images/print-dill-recriut.png",
     "thumbnail": "assets/images/print-dill-recriut-thumb.png",
     "category": "other"
   },
   {
-    "title": "Proposal - UT Recruitment",
-    "description": "Print campaign concept for University of Tennesee international student recruitment",
+    "title": "UT Recruitment Proposal",
+    "description": "Delivered an integrated campaign for the University of Tennessee, including print concepts, modern sigil treatments, slogans, and branding to engage international students effectively.",
     "src": "assets/images/ut-foreign-recruit.jpg",
     "thumbnail": "assets/images/ut-foreign-recruit-thumb.jpg",
     "category": "other"
   },
   {
-    "title": "Sigil - UT Recruitment",
+    "title": "UT Recruitment Sigil",
     "description": "Modern sigil treatment for University of Tennesee international student recruitment",
     "src": "assets/images/ut-sigil-modern.jpg",
     "thumbnail": "assets/images/ut-sigil-modern-thumb.jpg",
     "category": "other"
   },
   {
-    "title": "Slogan - UT Recruitment",
+    "title": "UT Recruitment Slogan",
     "description": "Slogan concepts and branding treatment for University of Tennesee international student recruitment",
     "src": "assets/images/ut-recruit-slogan.jpg",
     "thumbnail": "assets/images/ut-recruit-slogan-thumb.jpg",
     "category": "other"
   },
   {
-    "title": "Kickstarter - Scrying Eyes",
-    "description": "Kickstarter branding and marketing images for video game ecommerce",
+    "title": "Scrying Eyes Kickstarter",
+    "description": "Created branding and marketing visuals for a Kickstarter campaign, combining vibrant graphics with compelling messaging to captivate the target audience and drive funding success.",
     "src": "assets/images/se-kickstarter.jpg",
     "thumbnail": "assets/images/se-kickstarter-thumb.jpg",
     "category": "other"
