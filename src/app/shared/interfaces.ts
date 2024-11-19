@@ -11,3 +11,9 @@ export interface Links {
   url: string;
   target: string;
 }
+
+export interface Skills {
+  title: string;
+  copy: string;
+  icon : string;
+}

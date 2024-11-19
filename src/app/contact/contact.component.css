@@ -1,5 +1,5 @@
 button:disabled,
 button[disabled]{
-  background-color: #827fca;
+  background-color: #caa18a;
   cursor: not-allowed;
 }

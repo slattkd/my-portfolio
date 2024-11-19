@@ -11,7 +11,8 @@ import { Links } from '../shared/interfaces';
 export class FooterComponent {
   @Input() links: Links[] = [];
 
-  imgUrl = './assets/images/me.png';
+  imgUrl = './assets/images/me-old.png';
+  linkedInURL = 'https://www.linkedin.com/in/dane-slatten/';
   currentYear = new Date().getFullYear();
 
 }

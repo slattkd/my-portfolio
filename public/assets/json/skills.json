@@ -1,0 +1,47 @@
+[
+  {
+    "title": "User-Centered Design",
+    "copy": "Conducted in-depth UX research, including user interviews, persona creation, and journey mapping, to ensure design solutions align with end-user needs and behaviors.",
+    "icon" : "icon-user"
+  },
+  {
+    "title": "Wireframing and Prototyping",
+    "copy": "Created low-fidelity wireframes and high-fidelity prototypes to visualize workflows, iterate designs, and gather stakeholder and user feedback effectively.",
+    "icon" : "icon-wire"
+  },
+  {
+    "title": "Responsive UI Design",
+    "copy": "Designed pixel-perfect, mobile-first interfaces that ensure seamless experiences across devices, adhering to accessibility and performance standards.",
+    "icon" : "icon-devices"
+  },
+  {
+    "title": "Design Systems and Style Guides",
+    "copy": "Built comprehensive design systems and style guides to maintain brand consistency, improve scalability, and streamline collaboration between design and development teams.",
+    "icon" : "icon-guide"
+  },
+  {
+    "title": "Interactive Component Development",
+    "copy": "Developed reusable, interactive components using modern front-end technologies such as Angular and Tailwind CSS, ensuring maintainability and consistency across applications.",
+    "icon" : "icon-component"
+  },
+  {
+    "title": "Full-Stack Integration",
+    "copy": "Implemented seamless integration of front-end interfaces with back-end systems and APIs, ensuring data flow, application stability, and overall functionality.",
+    "icon" : "icon-stack"
+  },
+  {
+    "title": "Data-Driven Decision Making",
+    "copy": "Used analytics and user feedback to validate design decisions, refine features, and optimize user workflows based on real-world usage patterns.",
+    "icon" : "icon-data"
+  },
+  {
+    "title": "Performance Optimization",
+    "copy": "Enhanced application performance by implementing efficient code practices, reducing load times, and ensuring compatibility with diverse browsers and devices.",
+    "icon" : "icon-optimize"
+  },
+  {
+    "title": "Collaboration and Agile Workflow",
+    "copy": "Worked closely with cross-functional teams in an Agile environment, ensuring seamless communication between UX researchers, designers, and developers throughout the project lifecycle.",
+    "icon" : "icon-collab"
+  }
+]

@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   navLinks = [
+    { title: 'About Me', url: '/about', target: '' },
     { title: 'Resume', url: '/resume', target: '' },
     { title: 'Gallery', url: '/gallery', target: '' },
     { title: 'Contact', url: '/contact', target: '' },

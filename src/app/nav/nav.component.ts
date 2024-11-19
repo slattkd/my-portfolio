@@ -12,7 +12,7 @@ export class NavComponent {
   @Input() links: Links[] = [];
 
   title = 'Dane Slatten';
-  imgUrl = './assets/images/me.png';
+  imgUrl = './assets/images/me-old.png';
   linkedInURL = 'https://www.linkedin.com/in/dane-slatten/';
 
 }
