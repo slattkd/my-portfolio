@@ -10,16 +10,31 @@
           <path class="fill-[#eadab9]" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
         </svg>
       </a>
-      <div (click)="toggleContent()" class="w-14 h-14 lg:hidden ml-auto">
+      <div (click)="toggleContent()" class="w-12 h-12 lg:hidden ml-auto">
         <svg xmlns:svg="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 125">
           <g transform="translate(0,-952.36218)"><path d="m 15,971.36218 c -2.7614,0 -5,2.2385 -5,5 0,2.7615 2.2386,5 5,5 l 70,0 c 2.7614,0 5,-2.2385 5,-5 0,-2.7615 -2.2386,-5 -5,-5 z m 0,26 c -2.7614,0 -5,2.2385 -5,5.00002 0,2.7615 2.2386,5 5,5 l 70,0 c 2.7614,0 5,-2.2385 5,-5 0,-2.76152 -2.2386,-5.00002 -5,-5.00002 z m 0,26.00002 c -2.7614,0 -5,2.2385 -5,5 0,2.7615 2.2386,5 5,5 l 70,0 c 2.7614,0 5,-2.2385 5,-5 0,-2.7615 -2.2386,-5 -5,-5 z" style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" fill="#eadab9" fill-opacity="1" stroke="none" marker="none"/></g>
         </svg>
       </div>
     </div>
 
+    <div id="link-wrapper" class="hidden lg:flex w-full flex-grow lg:justify-center lg:items-center lg:w-auto ml-auto">
+      <div class="text-sm flex lg:flex-grow justify-center lg:justify-end align-middle items-center">
+        <div class="">
+          @for (item of links; track item.title) {
+            <a
+              class="block mt-4 lg:inline-block text-xl lg:mt-0 text-[#eadab9] clickable lg:ml-6"
+              [href]="item.url"
+              routerLinkActive="border-b"
+              rel="noopener"
+            >
+              <span>{{ item.title }}</span>
+            </a>
+          }
+        </div>
+      </div>
+    </div>
     
-    
-    <div id="link-wrapper" [@slideDown]="showContent ? 'shown' : 'hidden'" class="w-full block flex-grow lg:flex lg:justify-center lg:items-center lg:w-auto">
+    <div id="link-wrapper" [@slideDown]="showContent ? 'shown' : 'hidden'" class="flex lg:hidden w-full flex-grow justify-center ">
       <div class="text-sm flex lg:flex-grow justify-center lg:justify-end align-middle items-center">
         <div class="">
           @for (item of links; track item.title) {
