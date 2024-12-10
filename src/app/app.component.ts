@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT, Location } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
@@ -12,7 +12,10 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements AfterViewInit {
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private location: Location
+  ) {}
 
   navLinks = [
     { title: 'About Me', url: '/about', target: '' },
@@ -27,7 +30,6 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
 
     const svg = `<svg enable-background="new 0 0 100 100" fill="white" version="1.1" viewBox="0 0 100 125" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m86.643 46.405c0.010689-0.29057 0.021507-0.58119 0.021507-0.88263 0-13.206-10.709-23.915-23.915-23.915-10.074 0-18.685 6.2211-22.215 15.047-1.7113-0.67816-3.5732-1.0548-5.5321-1.0548-6.4469 0-11.936 4.0577-14.056 9.762-0.52741-0.053772-1.0655-0.075283-1.6145-0.075283-9.1377 0-16.553 7.4156-16.553 16.553s7.4157 16.554 16.553 16.554h61.338c9.1378 0 16.553-7.4157 16.553-16.554 1e-7 -7.0282-4.3913-13.045-10.58-15.434z"/></svg>`;
-
     const screenWidth = window.innerWidth;
     const bg:any = this.document.querySelector('.gradient-background');
     const numImages = 6;
@@ -36,15 +38,22 @@ export class AppComponent implements AfterViewInit {
     var imageSize = 0;
     var speed = 17;
 
-    setTimeout(() => { 
-      bgHeight = bg.offsetHeight * 0.85; 
-      imageSize = Math.min(bgHeight / numImages, 175);
 
-      for (let i = 0; i < numImages; i++) {
-        createFloatingSVG();
-      }
-    }, 300 )
+    const animateBG = () => {
+      setTimeout(() => { 
+        bgHeight = bg.offsetHeight * 0.85; 
+        imageSize = Math.min(bgHeight / numImages, 175);
+        for (let i = 0; i < numImages; i++) {
+          createFloatingSVG();
+        }
+      }, 300 )
+    }
 
+    console.log(this.location.path());
+    const path = this.location.path();
+    if (!path.includes('gallery')) {
+      animateBG();
+    }
 
     const random = (min: number, max: number)=> {
       let init = Math.random() * (max - min) + min;
@@ -76,13 +85,10 @@ export class AppComponent implements AfterViewInit {
         wrapper.style.left = `${-x}px`;
         wrapper.style.top = `${y}px`;
         wrapper.innerHTML = svg;
-
         if (bg) {
           bg.appendChild(wrapper);
         }
-
         animateFloatingSVG(wrapper);
-
       }
 
       
@@ -91,7 +97,6 @@ export class AppComponent implements AfterViewInit {
     const animateFloatingSVG = (element:HTMLElement)=> {
       const duration = random(speed, speed + 5);
       const endX = screenWidth + imageSize;
-
       element.animate(
         [
           { transform: `translate(0, 0)` },
@@ -104,8 +109,6 @@ export class AppComponent implements AfterViewInit {
         }
       );
     }
-
     
   }
-
 }
