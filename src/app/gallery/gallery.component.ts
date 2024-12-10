@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { FetchJsonService } from '../fetch-json.service';
+// declare var Splide from '@splidejs/splide/dist/js/splide.min.js';
 import Splide from '@splidejs/splide';
 import { Gallery } from '../shared/interfaces';
 import { FilterObjectsPipe } from '../filter-objects.pipe';

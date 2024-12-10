@@ -1,3 +1,5 @@
+@import "@splidejs/splide/dist/css/splide.min.css";
+
 .splide__arrow.splide__arrow--prev {
   transform: translate(-55px, 120px);
   padding-left: 6px;
