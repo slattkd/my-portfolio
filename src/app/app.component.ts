@@ -49,10 +49,7 @@ export class AppComponent implements AfterViewInit {
       }, 300 )
     }
 
-    const path = this.location.path();
-    if (!path.includes('gallery')) {
-      animateBG();
-    }
+    // animateBG();
 
     const random = (min: number, max: number)=> {
       let init = Math.random() * (max - min) + min;
