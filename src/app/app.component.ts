@@ -41,7 +41,7 @@ export class AppComponent implements AfterViewInit {
 
     const animateBG = () => {
       setTimeout(() => { 
-        bgHeight = bg.offsetHeight * 0.85; 
+        bgHeight = bg.offsetHeight - 280; 
         imageSize = Math.min(bgHeight / numImages, 175);
         for (let i = 0; i < numImages; i++) {
           createFloatingSVG();
@@ -49,7 +49,6 @@ export class AppComponent implements AfterViewInit {
       }, 300 )
     }
 
-    console.log(this.location.path());
     const path = this.location.path();
     if (!path.includes('gallery')) {
       animateBG();
@@ -62,52 +61,57 @@ export class AppComponent implements AfterViewInit {
 
     const isOverlapping = (newY: number):boolean => {
       return svgElements.some((element:any) => {
+        console.log(newY, element.y, element.y + imageSize + 30);
         const over = newY > element.y && newY < element.y + imageSize + 30;
         return over;
       });
     }
 
     const createFloatingSVG = ()=> {
-      let x, y;
+      let x, y, overlap;
       do {
         x = imageSize;
         y = random(100, bgHeight);
-      } while (isOverlapping(Math.round(y)) && svgElements.length < numImages);
+        y = Math.round(y);
+      } while (isOverlapping(y) && svgElements.length < numImages);
 
-      if (svgElements.length < numImages) {
+      if (true) {
         svgElements.push({ x, y });
 
         const wrapper = document.createElement('div');
-        wrapper.classList.add('floating-svg');
         wrapper.style.position = 'absolute';
+        wrapper.classList.add('floating-svg');
         wrapper.style.width = `${imageSize}px`;
         wrapper.style.height = `${imageSize}px`;
-        wrapper.style.left = `${-x}px`;
-        wrapper.style.top = `${y}px`;
+        wrapper.style.transform = `translate(${-x}px, ${y}px)`;
+        wrapper.style.top = '100px';
         wrapper.innerHTML = svg;
         if (bg) {
           bg.appendChild(wrapper);
         }
-        animateFloatingSVG(wrapper);
+        animateFloatingSVG(wrapper, x, y);
       }
 
       
     }
 
-    const animateFloatingSVG = (element:HTMLElement)=> {
+    var cloudCount = 1;
+    const animateFloatingSVG = (element:HTMLElement, x:number, y:number)=> {
       const duration = random(speed, speed + 5);
       const endX = screenWidth + imageSize;
+      const cloudDelay = cloudCount * 1000;
       element.animate(
         [
-          { transform: `translate(0, 0)` },
-          { transform: `translate(${endX}px, 0)` },
+          { transform: `translate(${-x}px, ${y}px)` },
+          { transform: `translate(${endX}px, ${y}px)` },
         ],
         {
-          delay: random(0, 4000),
+          delay: cloudDelay,
           duration: duration * 1000,
           iterations: Infinity, // Loop animation
         }
       );
+      cloudCount ++;
     }
     
   }

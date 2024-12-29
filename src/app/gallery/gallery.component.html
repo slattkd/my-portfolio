@@ -10,20 +10,16 @@
       <h2 id="carousel-heading" class="font-semibold">{{caty | uppercase}}</h2>
     </div>
 
-    <div class="splide__arrows justify-between w-full flex" style="height:0">
+    <div class="splide__arrows justify-between w-full hidden relative md:flex" style="height:0">
       <button class="splide__arrow splide__arrow--prev clickable">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" class="bi bi-chevron-left" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-        </svg>
+        <svg _ngcontent-ng-c662853534="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" viewBox="0 0 16 16" class="bi bi-chevron-right"><path _ngcontent-ng-c662853534="" fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path></svg>
       </button>
       <button class="splide__arrow splide__arrow--next clickable">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" class="bi bi-chevron-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-        </svg>
+        <svg _ngcontent-ng-c662853534="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" viewBox="0 0 16 16" class="bi bi-chevron-right"><path _ngcontent-ng-c662853534="" fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path></svg>
       </button>
     </div>
     
-    <div class="splide__track flex w-full max-w-full border-r py-2" style="overflow: hidden;">
+    <div class="splide__track flex w-full max-w-full border-r py-3 md:px-3" style="overflow: hidden;">
       <ul class="splide__list flex w-full items-start">
           <li *ngFor="let item of slides | filterObjects: 'category' : caty" class="splide__slide slide-pic flex flex-col w-full border bg-gray-100 mx-4 shadow-sm rounded-t-md max-w-[350px]">
             <!-- min-w-[300px] min-h-[250px] -->

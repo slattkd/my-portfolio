@@ -1,41 +1,29 @@
 @import "@splidejs/splide/dist/css/splide.min.css";
 
+.splide__arrows.justify-between.w-full.flex.splide__arrows--ltr {
+  position: relative;
+}
+
 .splide__arrow.splide__arrow--prev {
-  transform: translate(-55px, 120px);
-  padding-left: 6px;
-  padding-right: 10px;
+  transform: translate(-65px, 120px);
+  padding-left: 5px;
+  padding-right: 9px;
 }
-
 .splide__arrow.splide__arrow--next {
-  transform: translate(55px, 120px);
-  padding-left: 8px;
-  padding-right: 8px;
+  transform: translate(65px, 120px);
+  padding-left: 7px;
+  padding-right: 7px;
 }
-
 button.splide__arrow {
-  background: #16161680;
-  border-radius:200px;
+  background: #16161640;
+  border-radius: 200px;
   z-index: 11;
   width: 50px;
   height: 50px;
 }
 
-/* @media screen and (min-width: 1400px) {
-  .splide__arrow.splide__arrow--prev {
-    transform: translate(-55px, 120px);
-  }
-  
-  .splide__arrow.splide__arrow--next {
-    transform: translate(55px, 120px);
-  }
+.splide__arrow svg.bi {
+  fill: #fff;
+  width: 27px;
+  height: 27px;
 }
-
-@media screen and (min-width: 1536px) {
-  .splide__arrow.splide__arrow--prev {
-    transform: translate(-55px, 120px);
-  }
-  
-  .splide__arrow.splide__arrow--next {
-    transform: translate(55px, 120px);
-  }
-} */
